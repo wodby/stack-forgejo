@@ -1,0 +1,27 @@
+name: forgejo
+title: Forgejo
+icon: forgejo
+
+services:
+- name: forgejo
+  title: Forgejo
+  service: forgejo
+  required: true
+  main: true
+  links:
+  - name: postgres
+    service: postgres
+  - name: sendmail
+    service: opensmtpd
+
+- name: postgres
+  title: PostgreSQL
+  service: postgres
+  required: true
+  volumes:
+  - name: data
+    size: 20
+
+- name: opensmtpd
+  title: OpenSMTPD
+  service: opensmtpd
