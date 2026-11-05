@@ -1,6 +1,7 @@
 name: forgejo
 title: Forgejo
 icon: forgejo
+docs: https://wodby.com/docs/2.0/stacks/catalog/forgejo/
 
 services:
 - name: forgejo
